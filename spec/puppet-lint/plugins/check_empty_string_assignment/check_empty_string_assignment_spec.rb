@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'empty_string_parameter_assignment' do
+describe 'empty_string_assignment' do
   let (:msg) { 'variable assigned to the empty string' }
 
   context 'with fix disabled' do

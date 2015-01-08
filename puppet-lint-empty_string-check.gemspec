@@ -12,9 +12,9 @@ Gem::Specification.new do |spec|
     'spec/**/*',
   ]
   spec.test_files  = Dir['spec/**/*']
-  spec.summary     = 'A puppet-lint plugin to check for parameters defaulting to the empty string.'
+  spec.summary     = 'A puppet-lint plugin to check for variables assigned to the empty string.'
   spec.description = <<-EOF
-    A puppet-lint plugin to check for parameters defaulting to the empty string.
+    A puppet-lint plugin to check for variables assigned to the empty string.
   EOF
 
   spec.add_dependency             'puppet-lint', '~> 1.0'

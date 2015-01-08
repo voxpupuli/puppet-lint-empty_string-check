@@ -6,4 +6,4 @@ puppet-lint-empty_string-check
 [![Gem Version](https://badge.fury.io/rb/puppet-lint-empty_string-check.svg)](http://badge.fury.io/rb/puppet-lint-empty_string-check)
 [![Coverage Status](https://img.shields.io/coveralls/camptocamp/puppet-lint-empty_string-check.svg)](https://coveralls.io/r/camptocamp/puppet-lint-empty_string-check?branch=master)
 
-A puppet-lint plugin to check for parameters defaulting to the empty string.
+A puppet-lint plugin to check for variables assigned to the empty string.

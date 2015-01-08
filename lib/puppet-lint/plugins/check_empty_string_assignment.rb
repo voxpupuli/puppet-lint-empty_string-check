@@ -1,4 +1,4 @@
-PuppetLint.new_check(:empty_string_parameter_assignment) do
+PuppetLint.new_check(:empty_string_assignment) do
   def check
     tokens.each_with_index do |token, token_idx|
       if token.type == :SSTRING && token.prev_code_token.type == :EQUALS && \
