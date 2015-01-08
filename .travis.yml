@@ -11,5 +11,10 @@ rvm:
   - 2.1.5
 matrix:
   fast_finish: true
+deploy:
+  provider: rubygems
+  api_key: "9c702f776b3a7691738aaa7c6c43c5ab"
+  on:
+    tags: true
 notifications:
   email: false
