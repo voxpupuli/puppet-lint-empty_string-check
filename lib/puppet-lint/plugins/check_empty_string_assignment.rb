@@ -1,0 +1,15 @@
+require 'pp'
+
+PuppetLint.new_check(:empty_string_parameter_assignment) do
+  def check
+    tokens.each_with_index do |token, token_idx|
+      if token.type == :SSTRING && token.prev_code_token.type == :EQUALS && token.value == ''
+        notify :warning, {
+          :message => 'variable assigned to the empty string',
+          :line    => token.line,
+          :column  => token.column,
+        }
+      end
+    end
+  end
+end
