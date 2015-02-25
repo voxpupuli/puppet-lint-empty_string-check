@@ -9,6 +9,19 @@ puppet-lint-empty_string-check
 
 A puppet-lint plugin to check for variables assigned to the empty string.
 
+## Installing
+
+### From the command line
+
+```shell
+$ gem install puppet-lint-empty_string-check
+```
+
+### In a Gemfile
+
+```ruby
+gem 'puppet-lint-empty_string-check', :require => false
+```
 
 ## Checks
 
