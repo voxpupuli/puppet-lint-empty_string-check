@@ -1,11 +1,12 @@
 puppet-lint-empty_string-check
 ===============================
 
-[![Build Status](https://img.shields.io/travis/puppet-community/puppet-lint-empty_string-check.svg)](https://travis-ci.org/puppet-community/puppet-lint-empty_string-check)
-[![Gem Version](https://img.shields.io/gem/v/puppet-lint-empty_string-check.svg)](https://rubygems.org/gems/puppet-lint-empty_string-check)
-[![Gem Downloads](https://img.shields.io/gem/dt/puppet-lint-empty_string-check.svg)](https://rubygems.org/gems/puppet-lint-empty_string-check)
-[![Coverage Status](https://img.shields.io/coveralls/puppet-community/puppet-lint-empty_string-check.svg)](https://coveralls.io/r/puppet-community/puppet-lint-empty_string-check?branch=master)
-[![Gemnasium](https://img.shields.io/gemnasium/puppet-community/puppet-lint-empty_string-check.svg)](https://gemnasium.com/puppet-community/puppet-lint-empty_string-check)
+[![License](https://img.shields.io/github/license/voxpupuli/puppet-lint-empty_string-check.svg)](https://github.com/voxpupuli/puppet-lint-empty_string-check/blob/master/LICENSE)
+[![Test](https://github.com/voxpupuli/puppet-lint-empty_string-check/actions/workflows/test.yml/badge.svg)](https://github.com/voxpupuli/puppet-lint-empty_string-check/actions/workflows/test.yml)
+[![Release](https://github.com/voxpupuli/puppet-lint-empty_string-check/actions/workflows/release.yml/badge.svg)](https://github.com/voxpupuli/puppet-lint-empty_string-check/actions/workflows/release.ym
+l)
+[![RubyGem Version](https://img.shields.io/gem/v/puppet-lint-empty_string-check.svg)](https://rubygems.org/gems/puppet-lint-empty_string-check)
+[![RubyGem Downloads](https://img.shields.io/gem/dt/puppet-lint-empty_string-check.svg)](https://rubygems.org/gems/puppet-lint-empty_string-check)
 [![Donated by Camptocamp](https://img.shields.io/badge/donated%20by-camptocamp-fb7047.svg)](#transfer-notice)
 
 A puppet-lint plugin to check for variables assigned to the empty string.
@@ -67,3 +68,17 @@ The maintainer preferred that Puppet Community take ownership of the module for 
 Existing pull requests and issues were transferred over, please fork and continue to contribute here instead of Camptocamp.
 
 Previously: https://github.com/camptocamp/puppet-lint-empty_string-check
+
+## License
+
+This gem is licensed under the Apache-2 license.
+
+## Release information
+
+To make a new release, please do:
+* update the version in the gemspec file
+* Install gems with `bundle install --with release --path .vendor`
+* generate the changelog with `bundle exec rake changelog`
+* Check if the new version matches the closed issues/PRs in the changelog
+* Create a PR with it
+* After it got merged, push a tag. GitHub actions will do the actual release to rubygems and GitHub Packages
