@@ -1,13 +1,14 @@
 name: Release
 
 on:
-  create:
-    ref_type: tag
+  push:
+    tags:
+      - '*'
 
 jobs:
   release:
     runs-on: ubuntu-latest
-    if: github.repository == 'voxpupuli/puppet-lint-empty_string-check'
+    if: github.repository_owner == 'voxpupuli'
     steps:
       - uses: actions/checkout@v2
       - name: Install Ruby 3.0
