@@ -16,10 +16,22 @@ describe 'empty_string_assignment' do
       end
     end
 
+    context 'class internal variable without empty strings' do
+      let (:code) {
+        <<-EOS
+        class foo ( ) { $bar = 'baz' }
+        EOS
+      }
+
+      it 'should not detect any problems' do
+        expect(problems).to have(0).problems
+      end
+    end
+
     context 'class definition with empty strings' do
       let (:code) {
         <<-EOS
-        class foo ( $bar = '' ) { }
+        class foo ( String $bar = '' ) { }
         EOS
       }
 
@@ -29,6 +41,17 @@ describe 'empty_string_assignment' do
 
       it 'should create a warning' do
         expect(problems).to contain_warning(msg).on_line(1).in_column(28)
+      end
+    end
+    context 'class internal variable with empty strings' do
+      let (:code) {
+        <<-EOS
+        class foo ( ) { $bar = '' }
+        EOS
+      }
+
+      it 'should not detect any problems' do
+        expect(problems).to have(0).problem
       end
     end
   end
@@ -61,7 +84,7 @@ describe 'empty_string_assignment' do
     context 'class definition with empty strings' do
       let (:code) {
         <<-EOS
-        class foo ( $bar = '' ) { }
+        class foo ( String $bar = '' ) { }
         EOS
       }
 
