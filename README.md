@@ -3,12 +3,19 @@ puppet-lint-empty_string-check
 
 [![License](https://img.shields.io/github/license/voxpupuli/puppet-lint-empty_string-check.svg)](https://github.com/voxpupuli/puppet-lint-empty_string-check/blob/master/LICENSE)
 [![Test](https://github.com/voxpupuli/puppet-lint-empty_string-check/actions/workflows/test.yml/badge.svg)](https://github.com/voxpupuli/puppet-lint-empty_string-check/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/voxpupuli/puppet-lint-empty_string-check/branch/master/graph/badge.svg)](https://codecov.io/gh/voxpupuli/puppet-lint-empty_string-check)
 [![Release](https://github.com/voxpupuli/puppet-lint-empty_string-check/actions/workflows/release.yml/badge.svg)](https://github.com/voxpupuli/puppet-lint-empty_string-check/actions/workflows/release.yml)
 [![RubyGem Version](https://img.shields.io/gem/v/puppet-lint-empty_string-check.svg)](https://rubygems.org/gems/puppet-lint-empty_string-check)
 [![RubyGem Downloads](https://img.shields.io/gem/dt/puppet-lint-empty_string-check.svg)](https://rubygems.org/gems/puppet-lint-empty_string-check)
 [![Donated by Camptocamp](https://img.shields.io/badge/donated%20by-camptocamp-fb7047.svg)](#transfer-notice)
 
 A puppet-lint plugin to check for variables assigned to the empty string.
+
+This repository is archived. It was designed to verify that modules for Puppet
+3 work on Puppet 4 as well. Vox Pupuli also maintains
+[puppet-lint-params_empty_string-check](https://github.com/voxpupuli/puppet-lint-params_empty_string-check).
+That puppet-lint plugin only checks for class parameters with a String datatype
+and `''` as default value.
 
 ## Installing
 
